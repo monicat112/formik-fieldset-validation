@@ -1,0 +1,110 @@
+@import '../styles/variables';
+
+$font-size: 2.3em;
+$value-spacing: 0.438em;
+
+.fieldset {
+    padding: 0;
+    margin: 2em 0 0;
+    border: none;
+}
+
+.legend {
+    margin-bottom: 0.3em;
+    font-weight: $fw-semi;
+    display: inline-block;
+}
+
+.inputGroup {
+    margin-left: -$value-spacing;
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+.inputWrap {
+    box-sizing: border-box;
+    width: 14.285%;
+    padding-left: $value-spacing;
+    float: left;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    border: 1px solid $gray;
+    border-radius: 0;
+    background-color: #fff;
+    text-align: center;
+    font-size: $font-size;
+    line-height: $font-size;
+    height: 1.45em;
+    font-weight: $fw-semi;
+    padding: 0.1em;
+
+    &:hover,
+    &:focus {
+        border-color: $purple;
+    }
+
+    @media (min-width: $break-sm) {
+    // @media (min-width: 415px) {
+        $font-size: 4.063em;
+        height: 1.25em;
+        font-size: $font-size;
+        line-height: $font-size;
+    }
+}
+
+.inputError {
+  border-color: $red;
+  &:hover,
+  &:focus {
+      border-color: $red;
+  }
+}
+
+.errorLabel {
+    color: $red;
+    font-size: 0.875em;
+    margin-top: 0.2em;
+}
+
+.buttonGroup {
+    button + button {
+        margin-left: 0.75em;
+    }
+}
+
+.button,
+.buttonSecondary {
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    font-family: $main-font;
+    padding: 0.65em 1.2em;
+    background: $purple;
+    color: #fff;
+    &:hover, &:focus {
+        background: $light-purple;
+    }
+}
+
+.buttonSecondary {
+    background: $gray-3;
+    &:hover, &:focus {
+        background: $gray-2;
+    }
+}
+
+.visuallyHidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}

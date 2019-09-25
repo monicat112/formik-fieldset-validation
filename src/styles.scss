@@ -1,0 +1,28 @@
+@import 'styles/variables';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 100%;
+  font-family: $main-font;
+  background: $background;
+}
+
+h1 {
+  color: $dark-purple;
+  line-height: 1;
+}
+
+.container {
+  max-width: 35.5em;
+  padding: 1em;
+  margin: 0 auto;
+}
