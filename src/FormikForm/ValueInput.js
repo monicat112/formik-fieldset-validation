@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
+import { ErrorMessage } from 'formik';
 import classNames from 'classnames';
 import valueIsInArr from './scripts/value-is-in-arr';
 import styles from './styles.module.scss';
@@ -58,6 +59,11 @@ const ValueInput = forwardRef((props, ref) => {
         className={inputClassNames}
         onChange={handleValueChange}
         onKeyDown={handleKeyDown}
+      />
+      {/* for screenreaders */}
+      <ErrorMessage
+        name={name}
+        render={msg => <div className={styles.visuallyHidden}>{msg}</div>}
       />
     </div>
   );
