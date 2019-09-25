@@ -1,9 +1,8 @@
-import React, { forwardRef } from "react";
-import PropTypes from "prop-types";
-import { ErrorMessage } from "formik";
-import classNames from "classnames";
-import valueIsInArr from "./scripts/value-is-in-arr";
-import styles from "./styles.module.scss";
+import React, { forwardRef } from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import valueIsInArr from './scripts/value-is-in-arr';
+import styles from './styles.module.scss';
 
 // give this component access to the ref that its parent passed down
 const ValueInput = forwardRef((props, ref) => {
@@ -60,8 +59,6 @@ const ValueInput = forwardRef((props, ref) => {
         onChange={handleValueChange}
         onKeyDown={handleKeyDown}
       />
-
-      <ErrorMessage name={name} render={msg => <div>{msg}</div>} />
     </div>
   );
 });
@@ -74,6 +71,6 @@ ValueInput.propTypes = {
   focusNextValue: PropTypes.func.isRequired
 };
 
-ValueInput.displayName = "forwardRef(ValueInput)";
+ValueInput.displayName = 'forwardRef(ValueInput)';
 
 export default ValueInput;

@@ -1,10 +1,11 @@
-import React, { Fragment } from "react";
-import { Formik, Form } from "formik";
-import ValueGroup from "./ValueGroup";
-import Buttons from "./Buttons";
-import { valueDataFormik } from "./scripts/value-data";
-import schema from "./scripts/schema";
-import convertValuesToString from "./scripts/convert-values-to-string";
+import React, { Fragment } from 'react';
+import { Formik, Form } from 'formik';
+import ValueGroup from './ValueGroup';
+import Buttons from './Buttons';
+import { valueDataFormik } from './scripts/value-data';
+import schema from './scripts/schema';
+import newMessage from './scripts/new-message';
+import convertValuesToString from './scripts/convert-values-to-string';
 
 function FormikForm() {
   const [successMsg, setSuccessMsg] = React.useState(null);
@@ -13,16 +14,16 @@ function FormikForm() {
     <Fragment>
       <Formik
         initialValues={{
-          vCodeGroup: "",
+          vCodeGroup: '',
           ...valueDataFormik,
-          role: "",
-          phone: "",
-          password: ""
+          role: '',
+          phone: '',
+          password: ''
         }}
         validationSchema={schema}
         onSubmit={(values, actions) => {
           const valueString = convertValuesToString(values);
-          setSuccessMsg(`${valueString} is a great number!`);
+          setSuccessMsg(newMessage(valueString));
           actions.setSubmitting(false);
         }}
         onReset={() => {
@@ -37,8 +38,8 @@ function FormikForm() {
         }) => (
           <Form>
             <ValueGroup
-              legend="Enter your favorite 7 digit number"
-              formikName="vCodeGroup"
+              legend='Enter your favorite 7 digit number'
+              formikName='vCodeGroup'
               errors={errors}
               touched={touched}
               setFieldValue={setFieldValue}
