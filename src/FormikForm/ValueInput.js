@@ -49,7 +49,7 @@ const ValueInput = forwardRef((props, ref) => {
 
   return (
     <div className={styles.inputWrap}>
-      <label htmlFor={name} className={styles.visuallyHidden}>
+      <label htmlFor={name} className='visuallyHidden'>
         {label}
       </label>
       <input
