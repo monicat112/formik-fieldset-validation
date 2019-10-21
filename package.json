@@ -21,8 +21,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "prebuild": "rm -rf docs",
-    "postbuild": "cowsay Moooving the ßuild folder into docs && rename build docs",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
