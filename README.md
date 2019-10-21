@@ -10,3 +10,23 @@ Other Features
 * Consolidates the field values into a single string after submission
 * Reset-able
 * A possilbe mildly condescending success message
+
+## Getting started
+
+`$ npm i`
+
+**Dev**
+
+`$ npm start`
+
+**Prod**
+
+`$ npm build`
+
+`$ git commit -am "Updates"`
+
+`$ git push heroku master`
+
+## Git
+
+Remotes are set up for github (the public repo) and heroku (hosting). [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
