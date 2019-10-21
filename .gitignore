@@ -2,8 +2,7 @@
 node_modules
 
 # production
-/sdtest/build
-/sdtest/exports
+/build
 
 # misc
 .DS_Store
