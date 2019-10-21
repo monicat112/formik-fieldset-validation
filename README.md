@@ -11,22 +11,4 @@ Other Features
 * Reset-able
 * A possilbe mildly condescending success message
 
-## Getting started
-
-`$ npm i`
-
-**Dev**
-
-`$ npm start`
-
-**Prod**
-
-`$ npm build`
-
-`$ git commit -am "Updates"`
-
-`$ git push heroku master`
-
-## Git
-
-Remotes are set up for github (the public repo) and heroku (hosting). [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
+Made with [Create React App](https://github.com/facebook/create-react-app).
