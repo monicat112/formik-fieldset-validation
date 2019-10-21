@@ -63,7 +63,7 @@ const ValueInput = forwardRef((props, ref) => {
       {/* for screenreaders */}
       <ErrorMessage
         name={name}
-        render={msg => <div className={styles.visuallyHidden}>{msg}</div>}
+        render={msg => <div className='visuallyHidden'>{msg}</div>}
       />
     </div>
   );

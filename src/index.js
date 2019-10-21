@@ -16,9 +16,11 @@ function App() {
         <span className='visuallyHidden'>View on github</span>
       </a>
       <p>
-        The parent element displays an error if any children are invalid.
-        <br />
-        Also includes number-only entry and auto focus changing.
+        The parent element displays an error if any of the children are invalid.
+      </p>
+      <p>
+        You're also limited to entering only number characters, a single
+        character for each input and the focus changes after entry.
       </p>
       <FormikForm />
     </div>
