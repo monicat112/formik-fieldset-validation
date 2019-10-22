@@ -7,7 +7,7 @@ import './styles.scss';
 function App() {
   return (
     <div className='container'>
-      <h1>Formik Fieldset Validation</h1>
+      <h1>React with Formik: Fieldset Validation</h1>
       <a
         href='https://github.com/mocasalter/formik-fieldset-validation'
         className='ghLink'
