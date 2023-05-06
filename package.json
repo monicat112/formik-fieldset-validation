@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "classnames": "2.2.6",
-    "cowsay": "^1.4.0",
+    "cowsay": "^1.5.0",
     "formik": "^1.5.8",
     "node-sass": "^4.12.0",
     "prop-types": "15.7.2",
